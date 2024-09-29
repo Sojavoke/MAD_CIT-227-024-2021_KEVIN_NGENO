@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fitness Coaching</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+       
+        #contact-section {
+            background-color: white;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-section h2 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #contact-section p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        
+        #contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #34495e;
+        }
+
+        
+        @media (max-width: 600px) {
+            #contact-section {
+                padding: 20px;
+            }
+
+            #contact-section h2 {
+                font-size: 2em;
+            }
+
+            input[type="submit"] {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="form.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have any questions or need assistance? We’d love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+        
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we assist you?" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
